@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a Mess</title>
+    <style type="text/css">
+      .box{
+        border: 3px solid black;
+        width: 400px;
+        height: 200px;
+      }
+      .selectorPosition{
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class = "box">
+      <h2>Choose a Life Event to Share</h2>
+      <form name="LifeEvent" action="{{ url_for('getAd') }}" method="POST" class=new-task>
+        <select name="Events" class = "selectorPosition">
+          <option value="marriage">Marriage</option>
+          <option value="baby">Baby</option>
+          <option value="house">House</option>
+        </select>
+        <button type = "Submit">Choose!</button>
+      </form>
+    </div>
+  </body>
+</html>
